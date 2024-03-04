@@ -1,1 +1,340 @@
 /* Write your CSS here! */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin:unset;
+}
+
+a{
+    color:inherit ;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 968px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav {
+    position:fixed;
+    margin-bottom: 30px;
+    width:inherit;
+    top: 10px;
+    z-index: 100;
+}
+nav ul {
+    display: flex;
+    background: rgb(2,0,36);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,121,9,1) 35%, rgba(0,212,255,1) 100%); */
+    border-radius: 5px;
+}
+
+nav ul li {
+    text-transform:capitalize;
+    padding:20px 0;
+    width: 200px;
+    text-align: center;
+    margin:0 10px;
+    color: aliceblue;
+    font-size: 18px;
+    
+}
+
+nav ul li:hover {
+    background-color:#bab5b5;
+    color: #e15539;
+    cursor: pointer;
+    transition: 0.7s;
+    transform: translateY(-5px);
+}
+
+nav ul li:not(:hover) {
+    transition: 0.2s;
+    transform: translateY(0);
+}
+
+nav ul li:first-child {
+    border-left:2px solid #eee;
+}
+
+nav ul li:last-child {
+    border-right:2px solid #eee;
+}
+
+main {
+    margin-top: 100px;
+}
+header.mainHeader h1{
+    text-align: center;
+    text-transform:capitalize;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    display: block;
+}
+
+header.mainHeader h1 span:first-child{
+    font-size: 1.8rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.9249824929971989) 0%, rgba(191,88,83,1) 55%, rgba(232,255,0,1) 100%);
+    padding: 8px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+header.mainHeader h1 span:nth-child(2){
+    color:#3a4e27;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+main > section {
+    padding: 20px 0;
+}
+
+main > section > article {
+    width: 100%;
+    padding-bottom:20px;
+
+}
+
+main > section > article:first-child {
+    display: flex;
+}
+main > section > article:first-child > section{
+    width: 65%;
+    padding-right: 30px;
+}
+
+main > section > article:first-child > aside{
+    padding: 10px;
+    padding-left: 25px;
+}
+
+main > section > article:first-child > aside header h4{
+    text-transform:uppercase;
+    font-size: 17px;
+    text-align:center;
+    color: #eee;
+    background-color: rgb(42, 40, 40);
+    padding: 10px 20px;
+    padding-bottom: 20px;
+}
+section.mainSection > article header {
+    padding: 10px 0;
+}
+
+section.mainSection > article p {
+    padding: 10px 0;
+}
+
+section.mainSection > article aside figure img {
+    margin-top: 10px;
+    border: 2px solid #999;
+}
+
+section.mainSection > article aside ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+section.mainSection > article aside ul li{
+    padding: 10px;
+    width:33.33%
+}
+
+
+#myCalander ul {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+
+}
+
+#myCalander ul li {
+    width: 33.3%;
+    border: 2px solid #999;
+    margin: 5px ;
+    position: relative;
+}
+
+#myCalander ul li:hover {
+cursor: pointer;
+}
+
+#myCalander ul li:hover > div h5{
+    color: red;
+}
+
+#myCalander ul li div{
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #222121;
+    padding: 10px;
+    background-color:#ffffff94;
+}
+
+#myCalander ul li div h5{
+    font-size: 24px;
+}
+
+#myCalander ul li div p{
+    font-size: 20px;
+}
+
+
+/* travel with me  */
+#travelWithMe form {
+    display: flex;
+    align-items: end;
+    width: 100%;
+}
+#travelWithMe form div.formGroup{
+    width: 40%;
+    padding: 5px;
+}
+
+#travelWithMe form div.formGroup label{
+    width:100%;
+}
+
+#travelWithMe form div.formGroup input{
+    width:100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#travelWithMe form button{
+    background: #e15539;
+    color: aliceblue;
+    padding: 5px;
+    width: 150px;
+    font-size: 18px;
+    text-transform:capitalize;
+    font-weight: 300;
+}
+/* font classes */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
