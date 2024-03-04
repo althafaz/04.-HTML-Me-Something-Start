@@ -19,6 +19,8 @@ ul {
 
 body {
     width: 968px;
+    margin: 8px;
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
     font-family: 'Poppins',sans-serif;
@@ -73,7 +75,7 @@ nav ul li:last-child {
 main {
     margin-top: 100px;
 }
-header.mainHeader h1{
+#mainHeading h1{
     text-align: center;
     text-transform:capitalize;
     width: 100%;
@@ -82,7 +84,7 @@ header.mainHeader h1{
     display: block;
 }
 
-header.mainHeader h1 span:first-child{
+#mainHeading h1 span:first-child{
     font-size: 1.8rem;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,0.9249824929971989) 0%, rgba(191,88,83,1) 55%, rgba(232,255,0,1) 100%);
@@ -199,6 +201,10 @@ cursor: pointer;
 
 
 /* travel with me  */
+
+.funParagraph{
+    color: green;
+}
 #travelWithMe form {
     display: flex;
     align-items: end;
